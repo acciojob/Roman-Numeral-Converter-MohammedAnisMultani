@@ -18,19 +18,19 @@ function convertToRoman(num) {
  //    6:['I', 1]
  //  };
 
+
   let result = "";
 for(let i=0; i<7; i++){
-    let value = obj[i][0];
-    let  romans = obj[i][1];
+    let value = obj[i][1];
+    let  romans = obj[i][0];
     
-    while(nums>=value){
+    while(num>=value){
         result += romans;
-        nums = nums - value
+        num = num - value
     }
-
+    
 }
-return(result)
-
+return result
 
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
