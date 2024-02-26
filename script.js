@@ -43,7 +43,7 @@ function convertToRoman(num) {
 
  let result = '';
 
-    for (let value in obj) {
+     for (let value of Object.keys(obj).sort((a, b) => b - a)) {
         while (num >= value) {
             result += obj[value];
             num -= value;
